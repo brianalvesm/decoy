@@ -8,6 +8,32 @@ body
 	a
 		color: initial
 
+// Helpers
+.text-left-to-center-small
+  text-align: left
+  @media only screen and (max-width: 40rem)
+    text-align: center !important
+
+.text-right-to-center-small
+  text-align: right
+  @media only screen and (max-width: 40rem)
+    text-align: center
+
+// Flexbox Helpers
+.flex
+	display: flex
+
+.flex-wrap
+	flex-wrap: wrap
+
+.justify-flex-end-to-small-center
+	justify-content: flex-end
+	@media only screen and (max-width: 40rem)
+		justify-content: center
+
+.flex-items-center
+	align-items: center
+
 @import "base/typography"
 @import "base/header"
 @import "base/footer"

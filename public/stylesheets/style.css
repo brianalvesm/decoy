@@ -8,6 +8,33 @@ body {
   body a {
     color: initial; }
 
+.text-left-to-center-small {
+  text-align: left; }
+  @media only screen and (max-width: 40rem) {
+    .text-left-to-center-small {
+      text-align: center !important; } }
+
+.text-right-to-center-small {
+  text-align: right; }
+  @media only screen and (max-width: 40rem) {
+    .text-right-to-center-small {
+      text-align: center; } }
+
+.flex {
+  display: flex; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.justify-flex-end-to-small-center {
+  justify-content: flex-end; }
+  @media only screen and (max-width: 40rem) {
+    .justify-flex-end-to-small-center {
+      justify-content: center; } }
+
+.flex-items-center {
+  align-items: center; }
+
 @font-face {
   font-family: 'montserratextralight';
   src: url("../fonts/montserrat-extralight-webfont.woff2") format("woff2"), url("../fonts/montserrat-extralight-webfont.woff") format("woff");
@@ -61,16 +88,52 @@ header nav ul li {
 
 footer {
   background-color: black;
-  color: white; }
+  color: white;
+  padding-top: 100px; }
   footer ul li {
     display: inline-block; }
     footer ul li a {
-      color: white; }
+      color: white;
+      margin-right: 50px;
+      text-transform: uppercase;
+      font-family: 'montserratsemibold';
+      font-size: 19px; }
+    footer ul li:last-child a {
+      margin-right: 0px; }
   footer .logo-decoy-negativo {
-    width: 274px; }
+    width: 274px;
+    margin-bottom: 100px; }
   footer .footer-socialmedia-icons {
     width: 185px;
-    display: flex; }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px; }
     footer .footer-socialmedia-icons img {
       max-width: 35px;
       max-height: 35px; }
+  footer .highlight {
+    font-family: 'montserratsemibold';
+    font-size: 25px;
+    margin-bottom: 16px; }
+  footer address {
+    font-family: 'montserratlight';
+    font-size: 19px;
+    font-style: normal; }
+  footer .footer-copyright {
+    padding: 80px 0; }
+  @media only screen and (max-width: 40rem) {
+    footer {
+      padding-top: 80px; }
+      footer ul li {
+        display: block; }
+      footer .logo-decoy-negativo {
+        margin-bottom: 50px; }
+      footer .footer-socialmedia-icons {
+        margin-top: 50px; }
+      footer .highlight {
+        font-size: 15px; }
+      footer address {
+        font-size: 14px; }
+      footer .footer-copyright {
+        padding: 50px 0 80px; } }
