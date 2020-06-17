@@ -1,0 +1,25 @@
+// Components
+body
+	.button-primary
+		background-color: #15A689
+		text-transform: uppercase
+		color: white
+		font-family: 'montserratbold'
+		font-size: 26px
+		padding: 8px 20px 5px
+		&:hover,
+		&:focus
+			background-color: white
+			color: #15A689
+		@media only screen and (max-width: 75rem)
+			font-size: 16px
+			padding: 5px 10px 3px
+		@media only screen and (max-width: 40rem)
+			font-size: 26px
+			padding: 8px 20px 5px
+
+	.card
+		display: inline-block
+		background-color: $color-primary
+		color: white
+		padding: 40px

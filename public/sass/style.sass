@@ -1,12 +1,5 @@
-body
-	margin: 0
-	font-family: 'montserratregular', 'open sans', sans-serif
-	ul
-		margin: 0
-		li
-			list-style: none
-	a
-		color: initial
+// Variables
+$color-primary: #38208C
 
 // Helpers
 .text-left-to-center-small
@@ -34,6 +27,31 @@ body
 .flex-items-center
 	align-items: center
 
+// Mixins
+=transition($time)
+  -webkit-transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+  -moz-transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+  -ms-transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+  -o-transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+  transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+
+// Basics
+body
+	margin: 0
+	font-family: 'montserratregular', 'open sans', sans-serif
+	ul
+		margin: 0
+		li
+			list-style: none
+	a
+		color: initial
+		+transition(200ms)
+		&:hover,
+		&:focus
+			color: $color-primary
+
 @import "base/typography"
+@import "base/components"
 @import "base/header"
 @import "base/footer"
+@import "pages/homepage"

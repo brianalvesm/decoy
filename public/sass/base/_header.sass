@@ -1,4 +1,45 @@
 // Header
 header
-	nav ul li
+	.header-phone
 		display: inline-block
+		margin-bottom: 20px
+		font-family: 'montserratsemibold'
+		font-size: 19px
+		color: $color-primary
+		padding-right: 43px
+		position: relative
+		&:after
+			position: absolute
+			right: 0
+			top: -2px
+			content: ""
+			background:
+				image: url('../images/icons/icon-phone@2x.png')
+				repeat: no-repeat
+				size: contain
+			display: block
+			width: 31px
+			height: 31px
+	nav
+		width: 100%
+		ul li
+			display: inline-block
+			a
+				text-transform: uppercase
+				color: $color-primary
+				font-family: 'montserratsemibold'
+				font-size: 20px
+				margin-right: 50px
+	.logo-decoy
+		width: 270px
+	@media only screen and (max-width: 75rem)
+		nav ul li a
+			font-size: 16px
+			margin-right: 25px
+		.logo-decoy
+			width: 200px
+	@media only screen and (max-width: 40rem)
+		nav ul li
+			display: block
+		.flex
+			flex-direction: column
