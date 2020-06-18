@@ -32,7 +32,8 @@
 				font-size: 20px
 			.card
 				margin-top: 110px
-	&:nth-child(2)
+	&:nth-child(2),
+	&:nth-child(5)
 		padding: 90px 0 60px
 		.section-title
 			color: $color-primary
@@ -122,3 +123,53 @@
 				padding: 45px 35px
 				ul li:before
 					left: -54px
+	&:nth-child(5)
+		padding: 60px 0 90px
+		.grid-x:first-child
+			margin-bottom: 100px
+		.flex
+			align-items: flex-end
+			height: 100%
+		.section-title
+			line-height: 1
+			margin-bottom: 0
+		img
+			width: 442px
+		span
+			font-family: 'montserratbold'
+		.large-4 article
+			width: initial
+			margin-left: 65px
+			margin-right: 45px
+			.paragraph
+				position: relative
+				&:before
+					display: block
+					font-family: 'montserratbold'
+					font-size: 80px
+					color: $color-primary
+					height: 90px
+					position: absolute
+					left: -65px
+					width: 45px
+					text-align: right
+		.large-4:nth-child(1) article .paragraph:before
+			content: "1"
+		.large-4:nth-child(2) article .paragraph:before
+			content: "2"
+		.large-4:nth-child(3) article .paragraph:before
+			content: "3"
+		@media only screen and (max-width: 40rem)
+			.grid-x:first-child,
+			.section-title
+				margin-bottom: 60px
+			img
+				width: initial
+			.large-4
+				article
+					margin-bottom: 40px
+					.paragraph:before
+						font-size: 60px
+						height: 45px
+				&:last-child article
+					margin-bottom: 0
