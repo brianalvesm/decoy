@@ -33,3 +33,38 @@
 				font-size: 20px
 			.card
 				margin-top: 110px
+	&:nth-child(2)
+		padding: 90px 0 60px
+		.section-title
+			color: $color-primary
+			font-size: 60px
+			margin-bottom: 40px
+		.highlight
+			font-family: 'montserratbold'
+			background-color: $color-secondary
+		article
+			width: 355px
+			margin: auto
+			img
+				width: 92px
+				margin-bottom: 50px
+			.article-title
+				color: $color-primary
+				font-family: 'montserratbold'
+				font-size: 30px
+				text-transform: uppercase
+			.paragraph
+				font-size: 22px
+		@media only screen and (max-width: 40rem)
+			.section-title
+				font-size: 40px
+			article
+				width: initial
+				img
+					margin: 50px auto 25px
+				.article-title
+					font-size: 22px
+				.paragraph
+					font-size: 14px
+	&:nth-child(3)
+		background-color: $color-primary
