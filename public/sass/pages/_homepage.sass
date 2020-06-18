@@ -67,4 +67,40 @@
 				.paragraph
 					font-size: 14px
 	&:nth-child(3)
-		background-color: $color-primary
+		background:
+			color: $color-primary
+			image: url('../images/section-3-bg@2x.png')
+			repeat: no-repeat
+			position: center right
+			size: contain 
+		background-blend-mode: screen
+		color: white
+		padding: 90px 0 60px
+		h2
+			font-family: 'montserratbold'
+			font-size: 59px
+			padding: 35px 0 75px
+		h3
+			font-size: 39px
+			margin-bottom: 45px
+
+		.highlight
+			font-family: 'montserratbold'
+			display: inline-block
+			position: relative
+			z-index: 1
+			&:before
+				content: ""
+				display: block
+				height: 7px
+				width: 100%
+				position: absolute
+				bottom: 12px
+				z-index: -1
+				background-color: $color-secondary
+				opacity: 0.5
+		@media only screen and (max-width: 40rem)
+			h2
+				font-size: 49px
+			h3
+				font-size: 29px
