@@ -482,3 +482,22 @@ footer {
       margin: 0 auto; }
     .homepage .sec:nth-child(7) h3 {
       font-size: 17px; } }
+
+.homepage .sec:nth-child(8) {
+  padding: 80px 0; }
+  .homepage .sec:nth-child(8) .section-title {
+    font-family: 'montserratbold'; }
+  .homepage .sec:nth-child(8) .flex {
+    padding: 30px 0 70px; }
+  .homepage .sec:nth-child(8) img {
+    width: 33%;
+    padding-right: 15px; }
+    .homepage .sec:nth-child(8) img:last-child {
+      padding-right: 0; }
+  @media only screen and (max-width: 40rem) {
+    .homepage .sec:nth-child(8) .flex {
+      flex-direction: column;
+      padding: 25px 0 65px; }
+    .homepage .sec:nth-child(8) img {
+      width: 100%;
+      padding: 5px 0 !important; } }
