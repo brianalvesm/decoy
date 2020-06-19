@@ -32,12 +32,9 @@
 				font-size: 20px
 			.card
 				margin-top: 110px
-	&:nth-child(2),
-	&:nth-child(5)
+	&:nth-child(2)
 		padding: 90px 0 60px
 		.section-title
-			color: $color-primary
-			font-size: 60px
 			margin-bottom: 40px
 		article
 			width: 355px
@@ -46,23 +43,14 @@
 				width: 92px
 				margin-bottom: 50px
 			.article-title
-				color: $color-primary
-				font-family: 'montserratbold'
 				font-size: 30px
-				text-transform: uppercase
-			.paragraph
-				font-size: 22px
 		@media only screen and (max-width: 40rem)
-			.section-title
-				font-size: 40px
 			article
 				width: initial
 				img
 					margin: 50px auto 25px
 				.article-title
 					font-size: 22px
-				.paragraph
-					font-size: 14px
 	&:nth-child(3)
 		background:
 			color: $color-primary
@@ -72,17 +60,15 @@
 		background-blend-mode: screen
 		color: white
 		padding: 90px 0 60px
-		h2
+		.section-title
+			color: white
 			font-family: 'montserratbold'
-			font-size: 59px
 			padding: 35px 0 75px
-		h3
+		h2
 			font-size: 39px
 			margin-bottom: 45px
 		@media only screen and (max-width: 40rem)
 			h2
-				font-size: 49px
-			h3
 				font-size: 29px
 	&:nth-child(4)
 		background:
@@ -131,17 +117,20 @@
 			align-items: flex-end
 			height: 100%
 		.section-title
-			line-height: 1
 			margin-bottom: 0
+			line-height: 1
 		img
 			width: 442px
+			margin-bottom: 50px
 		span
 			font-family: 'montserratbold'
-		.large-4 article
+		article
 			width: initial
 			margin-left: 65px
 			margin-right: 45px
-			.paragraph
+			.article-title
+				font-size: 30px
+			.article-paragraph
 				position: relative
 				&:before
 					display: block
@@ -153,11 +142,11 @@
 					left: -65px
 					width: 45px
 					text-align: right
-		.large-4:nth-child(1) article .paragraph:before
+		.large-4:nth-child(1) article .article-paragraph:before
 			content: "1"
-		.large-4:nth-child(2) article .paragraph:before
+		.large-4:nth-child(2) article .article-paragraph:before
 			content: "2"
-		.large-4:nth-child(3) article .paragraph:before
+		.large-4:nth-child(3) article .article-paragraph:before
 			content: "3"
 		@media only screen and (max-width: 40rem)
 			.grid-x:first-child,
@@ -168,8 +157,51 @@
 			.large-4
 				article
 					margin-bottom: 40px
-					.paragraph:before
+					.article-paragraph:before
 						font-size: 60px
 						height: 45px
 				&:last-child article
 					margin-bottom: 0
+	&:nth-child(6)
+		background-color: #E6E6E6
+		padding: 85px 0
+		.section-title
+			font-family: 'montserratbold'
+		.flex
+			padding: 45px 0 60px
+		article
+			width: calc(50% - 187px)
+			margin-left: 127px
+			position: relative
+			&:before
+				display: block
+				content: ""
+				width: 93px
+				height: 92px
+				position: absolute
+				left: -127px
+				background-size: contain
+				background-repeat: no-repeat
+			&:nth-child(-n+2)
+				margin-bottom: 90px
+			&:nth-child(odd)
+				margin-right: 60px
+			&:nth-child(1):before
+				background-image: url('../images/icons/icon-biologico@2x.png')
+			&:nth-child(2):before
+				background-image: url('../images/icons/icon-economico@2x.png')
+			&:nth-child(3):before
+				background-image: url('../images/icons/icon-saude@2x.png')
+			&:nth-child(4):before
+				background-image: url('../images/icons/icon-eficiente@2x.png')
+			.article-title
+				font-family: 'montserratextrabold'
+		@media only screen and (max-width: 40rem)
+			.flex
+				flex-direction: column
+			article
+				width: initial
+				&:nth-child(-n+2)
+					margin-bottom: initial
+				&:nth-child(odd)
+					margin-right: initial
