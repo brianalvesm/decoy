@@ -102,8 +102,8 @@ body .button-primary {
   font-size: 26px;
   padding: 8px 20px 5px; }
   body .button-primary:hover, body .button-primary:focus {
-    background-color: white;
-    color: #15A689; }
+    color: white;
+    background-color: #128f76; }
 
 body .card {
   display: inline-block;
@@ -311,7 +311,6 @@ footer {
   padding: 90px 0 60px; }
   .homepage .sec:nth-child(3) .section-title {
     color: white;
-    font-family: 'montserratbold';
     padding: 35px 0 75px; }
   .homepage .sec:nth-child(3) h2 {
     font-size: 39px;
@@ -371,8 +370,6 @@ footer {
   .homepage .sec:nth-child(5) img {
     width: 442px;
     margin-bottom: 50px; }
-  .homepage .sec:nth-child(5) span {
-    font-family: 'montserratbold'; }
   .homepage .sec:nth-child(5) article {
     width: initial;
     margin-left: 65px;
@@ -414,8 +411,6 @@ footer {
 .homepage .sec:nth-child(6) {
   background-color: #E6E6E6;
   padding: 85px 0; }
-  .homepage .sec:nth-child(6) .section-title {
-    font-family: 'montserratbold'; }
   .homepage .sec:nth-child(6) .flex {
     padding: 45px 0 60px; }
   .homepage .sec:nth-child(6) article {
@@ -470,8 +465,6 @@ footer {
     font-size: 26px;
     line-height: 1.2;
     margin-left: 30px; }
-  .homepage .sec:nth-child(7) h3 span {
-    font-family: 'montserratbold'; }
   @media only screen and (max-width: 40rem) {
     .homepage .sec:nth-child(7) .flex {
       flex-direction: column;
@@ -485,8 +478,6 @@ footer {
 
 .homepage .sec:nth-child(8) {
   padding: 80px 0; }
-  .homepage .sec:nth-child(8) .section-title {
-    font-family: 'montserratbold'; }
   .homepage .sec:nth-child(8) .flex {
     padding: 30px 0 70px; }
   .homepage .sec:nth-child(8) img {
@@ -505,8 +496,6 @@ footer {
 .homepage .sec:nth-child(9) {
   background-color: #E6E6E6;
   padding: 60px 0; }
-  .homepage .sec:nth-child(9) .section-title {
-    font-family: 'montserratbold'; }
   .homepage .sec:nth-child(9) .flex {
     margin: 60px 0 20px; }
   .homepage .sec:nth-child(9) figure {
@@ -537,3 +526,14 @@ footer {
       width: 100%;
       margin-right: 0;
       margin-bottom: 10px; } }
+
+.homepage .sec:nth-child(10) {
+  padding: 80px 0; }
+  .homepage .sec:nth-child(10) .section-title,
+  .homepage .sec:nth-child(10) article:last-child {
+    margin-bottom: 90px; }
+  @media only screen and (min-width: 97.5rem) {
+    .homepage .sec:nth-child(10) {
+      background-image: url("../images/section-10-asset@2x.png");
+      background-position: right 100px center;
+      background-size: 524px 594px; } }
