@@ -23,7 +23,8 @@
       justify-content: center; } }
 
 .flex-items-center {
-  align-items: center; }
+  align-items: center;
+  height: 100%; }
 
 body {
   margin: 0;
@@ -453,3 +454,21 @@ footer {
         margin-bottom: initial; }
       .homepage .sec:nth-child(6) article:nth-child(odd) {
         margin-right: initial; } }
+
+.homepage .sec:nth-child(7) {
+  background-color: #38208C;
+  color: white;
+  padding: 80px 0; }
+  .homepage .sec:nth-child(7) .flex {
+    height: 146px;
+    border-right: 2px solid white;
+    margin: 20px 60px 20px 0; }
+  .homepage .sec:nth-child(7) img {
+    width: 255px; }
+  .homepage .sec:nth-child(7) .slogan {
+    font-family: 'montserratbold';
+    font-size: 26px;
+    line-height: 1.2;
+    margin-left: 30px; }
+  .homepage .sec:nth-child(7) h3 span {
+    font-family: 'montserratbold'; }
