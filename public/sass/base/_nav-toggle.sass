@@ -1,0 +1,29 @@
+// Menu toggle aparece na tela pequena (abaixo 640px)
+.menu-toggle
+	display: none
+
+@media only screen and (max-width: 40rem) 
+	.menu-toggle 
+	  display: block
+	  img
+	  	max-width: 34px
+
+	nav
+		clear: both
+		-webkit-transition: all 0.3s ease-out  
+		-moz-transition: all 0.3s ease-out
+		-ms-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+		&.active 
+			max-height: 15em
+		li a 
+			display: block
+			padding: 0.8em
+			border-bottom: 1px solid #808080
+		li:last-child a
+			border-bottom: none
+
+	.js nav 
+		overflow: hidden
+		max-height: 0

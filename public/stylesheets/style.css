@@ -178,6 +178,8 @@ header nav {
       font-family: 'montserratsemibold';
       font-size: 20px;
       margin-right: 50px; }
+  header nav.active {
+    max-height: 40em; }
 
 header .logo-decoy {
   width: 270px; }
@@ -190,10 +192,16 @@ header .logo-decoy {
     width: 200px; } }
 
 @media only screen and (max-width: 40rem) {
-  header nav ul li {
-    display: block; }
+  header nav ul {
+    width: 100%;
+    margin-bottom: 40px; }
+    header nav ul li {
+      display: block; }
+      header nav ul li a {
+        margin-right: 0; }
   header .flex {
-    flex-direction: column; } }
+    flex-wrap: wrap;
+    justify-content: space-evenly; } }
 
 footer {
   background-color: black;
@@ -246,6 +254,33 @@ footer {
         font-size: 14px; }
       footer .footer-copyright {
         padding: 50px 0 80px; } }
+
+.menu-toggle {
+  display: none; }
+
+@media only screen and (max-width: 40rem) {
+  .menu-toggle {
+    display: block; }
+    .menu-toggle img {
+      max-width: 34px; }
+  nav {
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+    nav.active {
+      max-height: 15em; }
+    nav li a {
+      display: block;
+      padding: 0.8em;
+      border-bottom: 1px solid #808080; }
+    nav li:last-child a {
+      border-bottom: none; }
+  .js nav {
+    overflow: hidden;
+    max-height: 0; } }
 
 .homepage .sec--hero {
   background-image: url("../images/hero-section-bg@2x.png");
