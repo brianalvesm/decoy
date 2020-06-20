@@ -142,6 +142,9 @@ body article .article-title {
 body article .article-paragraph {
   font-size: 22px; }
 
+body .paragraph {
+  font-size: 22px; }
+
 @media only screen and (max-width: 40rem) {
   body .section-title {
     font-size: 40px; }
@@ -585,3 +588,45 @@ footer {
     font-size: 154px;
     color: #38208C;
     padding-top: 220px; }
+  @media only screen and (max-width: 64rem) {
+    .quem-somos .sec--hero .hero-title {
+      font-size: 80px;
+      padding-top: 110px; } }
+
+.quem-somos .sec:nth-child(2) .section-title {
+  padding: 125px 0; }
+
+.quem-somos .sec:nth-child(2) .grid-x {
+  margin-bottom: 50px; }
+
+.quem-somos .sec:nth-child(2) .img-wrapper--1 {
+  margin-right: 40px; }
+
+.quem-somos .sec:nth-child(2) .img-wrapper--2 {
+  margin: 50px 0; }
+
+.quem-somos .sec:nth-child(2) .img-wrapper--3 {
+  position: relative; }
+  .quem-somos .sec:nth-child(2) .img-wrapper--3:after {
+    content: "";
+    display: block;
+    width: 312px;
+    height: 120px;
+    position: absolute;
+    top: -40px;
+    right: -156px;
+    background-image: url("../images/seta-estilizada@2x.png");
+    background-size: 312px 120px; }
+
+.quem-somos .sec:nth-child(2) .paragraph-wrapper {
+  margin: 100px 0 0 40px; }
+
+@media only screen and (max-width: 64rem) {
+  .quem-somos .sec:nth-child(2) .img-wrapper {
+    margin: 0 0 50px; }
+    .quem-somos .sec:nth-child(2) .img-wrapper--2 {
+      margin: 50px 0; }
+    .quem-somos .sec:nth-child(2) .img-wrapper:after {
+      content: none; }
+  .quem-somos .sec:nth-child(2) .paragraph-wrapper {
+    margin: 0 auto; } }
