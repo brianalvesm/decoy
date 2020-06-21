@@ -45,6 +45,8 @@ body {
 
 * {
   background-repeat: no-repeat; }
+  *:before, *:after {
+    background-repeat: no-repeat; }
 
 @font-face {
   font-family: 'montserratextralight';
@@ -144,6 +146,27 @@ body article .article-paragraph {
 
 body .paragraph {
   font-size: 22px; }
+
+body .quote {
+  color: #38208C;
+  font-size: 30px;
+  position: relative;
+  padding-left: 92px; }
+  body .quote:before, body .quote:after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 57px;
+    background-size: contain;
+    position: absolute; }
+  body .quote:before {
+    background-image: url("../images/icons/icon-quote-open@2x.png");
+    top: -28px;
+    left: 0; }
+  body .quote:after {
+    background-image: url("../images/icons/icon-quote-close@2x.png");
+    bottom: -28px;
+    right: 0; }
 
 @media only screen and (max-width: 40rem) {
   body .section-title {
@@ -621,6 +644,9 @@ footer {
 .quem-somos .sec:nth-child(2) .paragraph-wrapper {
   margin: 100px 0 0 40px; }
 
+.quem-somos .sec:nth-child(2) .quote {
+  margin: 90px 0; }
+
 @media only screen and (max-width: 64rem) {
   .quem-somos .sec:nth-child(2) .img-wrapper {
     margin: 0 0 50px; }
@@ -630,3 +656,6 @@ footer {
       content: none; }
   .quem-somos .sec:nth-child(2) .paragraph-wrapper {
     margin: 0 auto; } }
+
+.quem-somos .sec:nth-child(3) {
+  background-color: #E6E6E6; }
