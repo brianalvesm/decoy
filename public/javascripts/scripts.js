@@ -11,5 +11,13 @@ $(document).ready(function(){
 		  return false;
 		});
 
+		$('.owl-quemsomos').owlCarousel({
+		  nav:true,
+			loop:true,
+		  items:4,
+		  dots:false,
+		  autoplay:true
+		});
+
 	})(jQuery);
 });

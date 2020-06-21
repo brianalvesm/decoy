@@ -174,6 +174,48 @@ body .quote {
   body article .article-paragraph {
     font-size: 14px; } }
 
+.owl-carousel .owl-stage-outer {
+  margin: 0 75px; }
+
+.owl-carousel.owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: unset;
+  position: relative; }
+
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  position: absolute;
+  bottom: 125px; }
+  .owl-carousel .owl-prev span,
+  .owl-carousel .owl-next span {
+    display: block;
+    font-size: 0;
+    width: 45px;
+    height: 90px;
+    background-size: contain; }
+
+.owl-carousel .owl-prev {
+  left: 0; }
+  .owl-carousel .owl-prev span {
+    background-image: url("../images/icons/icon-nav-left@2x.png"); }
+
+.owl-carousel .owl-next {
+  right: 0; }
+  .owl-carousel .owl-next span {
+    background-image: url("../images/icons/icon-nav-right@2x.png"); }
+
+.owl-carousel .owl-item {
+  text-align: center; }
+
+.owl-carousel .carousel-title {
+  font-family: 'montserratbold';
+  color: #38208C;
+  text-transform: uppercase;
+  margin-top: 50px; }
+
+.owl-carousel .carousel-subtitle {
+  font-size: 16px;
+  color: #4D4D4D; }
+
 header .header-phone {
   display: inline-block;
   margin-bottom: 20px;
@@ -659,3 +701,10 @@ footer {
 
 .quem-somos .sec:nth-child(3) {
   background-color: #E6E6E6; }
+  .quem-somos .sec:nth-child(3) .section-title {
+    padding: 80px 0 60px; }
+
+.owl-quemsomos .card {
+  width: 345px;
+  height: 340px;
+  background-color: #606060; }

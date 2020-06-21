@@ -78,3 +78,39 @@ body
 		article
 			.article-paragraph
 				font-size: 14px
+
+.owl-carousel
+	.owl-stage-outer
+		margin: 0 75px
+	.owl-nav
+	&.owl-theme .owl-nav [class*=owl-]:hover
+		background-color: unset
+		position: relative
+	.owl-prev,
+	.owl-next
+		position: absolute
+		bottom: 125px
+		span
+			display: block
+			font-size: 0
+			width: 45px
+			height: 90px
+			background-size: contain
+	.owl-prev
+		left: 0
+		span
+			background-image: url('../images/icons/icon-nav-left@2x.png')
+	.owl-next
+		right: 0
+		span
+			background-image: url('../images/icons/icon-nav-right@2x.png')
+	.owl-item
+		text-align: center
+	.carousel-title
+		font-family: 'montserratbold'
+		color: $color-primary
+		text-transform: uppercase
+		margin-top: 50px
+	.carousel-subtitle
+		font-size: 16px
+		color: #4D4D4D
