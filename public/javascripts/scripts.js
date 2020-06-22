@@ -12,11 +12,28 @@ $(document).ready(function(){
 		});
 
 		$('.owl-quemsomos').owlCarousel({
-		  nav:true,
-			loop:true,
-		  items:4,
-		  dots:false,
-		  autoplay:true
+			responsive : {
+				// breakpoint from 0 up
+				0 : {
+					center:true,
+					margin:10,
+					nav:false,
+					loop:true,
+					items:1,
+				  dots:false,
+				  autoplay:true
+				},
+				// breakpoint from 640 up
+				640 : {
+			    center:false,
+			    margin:0,
+				  nav:true,
+					loop:true,
+				  items:4,
+				  dots:false,
+				  autoplay:true
+				}
+			}
 		});
 
 	})(jQuery);
