@@ -212,6 +212,8 @@ body .scroll {
     margin-bottom: 30px; }
 
 @media only screen and (max-width: 40rem) {
+  body .button-secondary {
+    font-size: 26px; }
   body .section-title {
     font-size: 30px; }
   body article .article-paragraph {
@@ -852,6 +854,10 @@ footer {
     height: 50px;
     margin-left: 30px; }
 
+@media only screen and (max-width: 40rem) {
+  .produtos .sec:nth-child(6) .button-secondary {
+    margin: 50px 0 0; } }
+
 .produtos .sec:nth-child(7) {
   background-color: #38208C;
   color: white;
@@ -866,8 +872,9 @@ footer {
   @media only screen and (max-width: 40rem) {
     .produtos .sec:nth-child(7) .flex {
       flex-direction: column;
-      align-items: flex-start;
-      margin: 0 auto 60px; }
+      margin: 60px 0; }
+    .produtos .sec:nth-child(7) .button-primary {
+      margin: 50px auto; }
     .produtos .sec:nth-child(7) h3 {
       font-size: 17px; } }
 
