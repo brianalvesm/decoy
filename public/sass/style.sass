@@ -13,6 +13,18 @@ $color-secondary: #33EFFF
   @media only screen and (max-width: 40rem)
     text-align: center
 
+.visible-mobile-only
+  @media only screen and (min-width: 64rem)
+    display: none !important
+  @media only screen and (max-width: 64rem)
+    display: block
+
+.visible-mobile-small-only
+  @media only screen and (min-width: 40rem)
+    display: none !important
+  @media only screen and (max-width: 40rem)
+    display: block
+
 // Flexbox Helpers
 .flex
 	display: flex
@@ -41,6 +53,7 @@ $color-secondary: #33EFFF
 body
 	margin: 0
 	font-family: 'montserratregular', 'open sans', sans-serif
+	color: #4D4D4D
 	ul
 		margin: 0
 		li
@@ -64,4 +77,5 @@ body
 @import "base/footer"
 @import "base/nav-toggle"
 @import "pages/homepage"
+@import "pages/produtos"
 @import "pages/quem-somos"

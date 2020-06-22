@@ -1,0 +1,60 @@
+.produtos .sec
+	&--hero
+		padding-top: 65px
+		.hero-title
+			font-family: 'montserratbold'
+			font-size: 154px
+			color: $color-primary
+			padding-top: 220px
+		.section-title
+			margin-bottom: 100px
+		@media only screen and (max-width: 64rem)
+			.hero-title
+				font-size: 80px
+				padding-top: 110px
+				line-height: 1
+	&:nth-child(3)
+		padding-bottom: 150px
+		background:
+			image: url('../images/page-produtos-embalagens-decoy@2x.png')
+			size: 1420px 947px
+			position: bottom center
+		.section-title
+			text-transform: uppercase
+			margin: 100px 0 200px
+		.content-wrapper
+			position: relative
+			&:after
+				content: ""
+				display: block
+				width: 312px
+				height: 120px
+				position: absolute
+				top: -120px
+				right: -156px
+				background:
+					image: url('../images/seta-estilizada-2@2x.png')
+					size: 312px 120px
+		.card
+			text-transform: uppercase
+			padding: 18px 50px 16px
+			position: relative
+			overflow: visible
+			&:after
+				display: block
+				content: ""
+				width: 63px
+				height: 63px
+				background:
+					image: url('../images/icons/icon-check-2@2x.png')
+					size: contain
+				position: absolute
+				right: -31px
+				top: 50%
+				margin-top: -31px
+		.card-desc
+			margin: 30px 0 60px
+		@media only screen and (max-width: 64rem)
+			background-image: none
+			.content-wrapper:after
+				content: none
