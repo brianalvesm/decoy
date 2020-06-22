@@ -731,6 +731,97 @@ footer {
       .produtos .sec:nth-child(3) .content-wrapper:after {
         content: none; } }
 
+.produtos .sec:nth-child(4) {
+  padding: 60px 0; }
+  .produtos .sec:nth-child(4) .section-title {
+    color: #4D4D4D;
+    margin-bottom: 140px; }
+    .produtos .sec:nth-child(4) .section-title .highlight {
+      color: #38208C;
+      text-transform: uppercase; }
+      .produtos .sec:nth-child(4) .section-title .highlight--style1 {
+        color: #4D4D4D;
+        text-transform: none; }
+  .produtos .sec:nth-child(4) article {
+    position: relative;
+    margin-left: 104px;
+    margin-bottom: 80px; }
+    .produtos .sec:nth-child(4) article:before {
+      display: block;
+      font-family: 'montserratbold';
+      font-size: 140px;
+      color: #38208C;
+      width: 84px;
+      height: 156px;
+      position: absolute;
+      top: 50%;
+      left: -104px;
+      margin-top: -78px;
+      text-align: left; }
+    .produtos .sec:nth-child(4) article:nth-child(1):before {
+      content: "1"; }
+    .produtos .sec:nth-child(4) article:nth-child(2):before {
+      content: "2"; }
+    .produtos .sec:nth-child(4) article:nth-child(3):before {
+      content: "3"; }
+  .produtos .sec:nth-child(4) img {
+    width: 566px; }
+
+.produtos .sec:nth-child(5) {
+  background-color: #E6E6E6;
+  padding: 85px 0; }
+  .produtos .sec:nth-child(5) .highlight--style1 {
+    color: #4D4D4D; }
+  .produtos .sec:nth-child(5) .flex {
+    padding: 45px 0 60px; }
+  .produtos .sec:nth-child(5) article {
+    width: calc(50% - 187px);
+    margin-left: 127px;
+    position: relative; }
+    .produtos .sec:nth-child(5) article:before {
+      display: block;
+      content: "";
+      width: 93px;
+      height: 92px;
+      position: absolute;
+      left: -127px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .produtos .sec:nth-child(5) article:nth-child(-n+6) {
+      margin-bottom: 90px; }
+    .produtos .sec:nth-child(5) article:nth-child(odd) {
+      margin-right: 60px; }
+    .produtos .sec:nth-child(5) article:nth-child(1):before {
+      background-image: url("../images/icons/icon-biologico@2x.png"); }
+    .produtos .sec:nth-child(5) article:nth-child(2):before {
+      background-image: url("../images/icons/icon-inovacao@2x.png");
+      width: 123px;
+      height: 122px;
+      left: -147px; }
+    .produtos .sec:nth-child(5) article:nth-child(3):before {
+      background-image: url("../images/icons/icon-economico@2x.png"); }
+    .produtos .sec:nth-child(5) article:nth-child(4):before {
+      background-image: url("../images/icons/icon-colaboracao@2x.png"); }
+    .produtos .sec:nth-child(5) article:nth-child(5):before {
+      background-image: url("../images/icons/icon-saude@2x.png"); }
+    .produtos .sec:nth-child(5) article:nth-child(6):before {
+      background-image: url("../images/icons/icon-ciencia@2x.png"); }
+    .produtos .sec:nth-child(5) article:nth-child(7):before {
+      background-image: url("../images/icons/icon-eficiente@2x.png"); }
+    .produtos .sec:nth-child(5) article:nth-child(8):before {
+      background-image: url("../images/icons/icon-sustentavel@2x.png"); }
+    .produtos .sec:nth-child(5) article .article-title {
+      font-family: 'montserratextrabold'; }
+  @media only screen and (max-width: 40rem) {
+    .produtos .sec:nth-child(5) .flex {
+      flex-direction: column; }
+    .produtos .sec:nth-child(5) article {
+      width: initial; }
+      .produtos .sec:nth-child(5) article:nth-child(-n+6) {
+        margin-bottom: initial; }
+      .produtos .sec:nth-child(5) article:nth-child(odd) {
+        margin-right: initial; } }
+
 .quem-somos .sec--hero {
   background-image: url("../images/page-quem-somos-hero-bg@2x.png");
   background-position: top center;
