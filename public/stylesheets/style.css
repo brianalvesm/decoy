@@ -102,7 +102,8 @@ body .button-primary {
   color: white;
   font-family: 'montserratbold';
   font-size: 26px;
-  padding: 8px 20px 5px; }
+  padding: 8px 20px 5px;
+  display: inline-block; }
   body .button-primary:hover, body .button-primary:focus {
     color: white;
     background-color: #128f76; }
@@ -124,10 +125,10 @@ body .highlight {
     body .highlight--style2:before {
       content: "";
       display: block;
-      height: 7px;
+      height: 13px;
       width: 100%;
       position: absolute;
-      bottom: 12px;
+      bottom: 18px;
       z-index: -1;
       background-color: #33EFFF;
       opacity: 0.5; }
@@ -168,53 +169,54 @@ body .quote {
     bottom: -28px;
     right: 0; }
 
+body .scroll {
+  overflow-y: scroll;
+  width: 605px;
+  height: 640px;
+  margin-bottom: 70px; }
+  body .scroll .item {
+    width: 532px;
+    margin-bottom: 30px; }
+
 @media only screen and (max-width: 40rem) {
   body .section-title {
     font-size: 40px; }
   body article .article-paragraph {
     font-size: 14px; } }
 
-.owl-carousel .owl-stage-outer {
-  margin: 0 75px; }
-
-.owl-carousel.owl-theme .owl-nav [class*=owl-]:hover {
-  background-color: unset;
+.owl-carousel {
   position: relative; }
-
-.owl-carousel .owl-prev,
-.owl-carousel .owl-next {
-  position: absolute;
-  bottom: 125px; }
-  .owl-carousel .owl-prev span,
-  .owl-carousel .owl-next span {
-    display: block;
-    font-size: 0;
-    width: 45px;
-    height: 90px;
-    background-size: contain; }
-
-.owl-carousel .owl-prev {
-  left: 0; }
-  .owl-carousel .owl-prev span {
-    background-image: url("../images/icons/icon-nav-left@2x.png"); }
-
-.owl-carousel .owl-next {
-  right: 0; }
-  .owl-carousel .owl-next span {
-    background-image: url("../images/icons/icon-nav-right@2x.png"); }
-
-.owl-carousel .owl-item {
-  text-align: center; }
-
-.owl-carousel .carousel-title {
-  font-family: 'montserratbold';
-  color: #38208C;
-  text-transform: uppercase;
-  margin-top: 50px; }
-
-.owl-carousel .carousel-subtitle {
-  font-size: 16px;
-  color: #4D4D4D; }
+  .owl-carousel.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: unset; }
+  .owl-carousel .owl-prev,
+  .owl-carousel .owl-next {
+    position: absolute;
+    top: 125px; }
+    .owl-carousel .owl-prev span,
+    .owl-carousel .owl-next span {
+      display: block;
+      font-size: 0;
+      width: 45px;
+      height: 90px;
+      background-size: contain; }
+  .owl-carousel .owl-prev {
+    left: -50px; }
+    .owl-carousel .owl-prev span {
+      background-image: url("../images/icons/icon-nav-left@2x.png"); }
+  .owl-carousel .owl-next {
+    right: -50px; }
+    .owl-carousel .owl-next span {
+      background-image: url("../images/icons/icon-nav-right@2x.png"); }
+  .owl-carousel .owl-item {
+    text-align: center; }
+  .owl-carousel .carousel-title {
+    font-family: 'montserratbold';
+    color: #38208C;
+    text-transform: uppercase;
+    margin-top: 50px; }
+  .owl-carousel .carousel-subtitle {
+    font-size: 16px;
+    color: #4D4D4D; }
 
 header .header-phone {
   display: inline-block;
@@ -700,9 +702,36 @@ footer {
     margin: 0 auto; } }
 
 .quem-somos .sec:nth-child(3) {
-  background-color: #E6E6E6; }
+  background-color: #E6E6E6;
+  background-image: linear-gradient(#E6E6E6 80%, #FFFFFF 20%); }
   .quem-somos .sec:nth-child(3) .section-title {
     padding: 80px 0 60px; }
+  .quem-somos .sec:nth-child(3) .team-lab-desc {
+    font-family: 'montserratlight';
+    font-size: 23px;
+    color: #38208C;
+    display: block;
+    text-align: center;
+    margin: 60px auto; }
+
+.quem-somos .sec:nth-child(4) .section-title {
+  margin-bottom: 60px; }
+
+.quem-somos .sec:nth-child(4) .button-primary {
+  margin: 70px auto; }
+
+.quem-somos .sec:nth-child(5) {
+  background-image: url("../images/page-quemsomos-manifesto-bg@2x.png");
+  background-size: cover;
+  background-position: center top 250px; }
+  .quem-somos .sec:nth-child(5) .section-title {
+    margin-bottom: 60px;
+    color: white;
+    text-align: center; }
+  .quem-somos .sec:nth-child(5) .card {
+    margin-bottom: 185px; }
+    .quem-somos .sec:nth-child(5) .card .button-primary {
+      margin: 60px 0; }
 
 .owl-quemsomos .card {
   width: 345px;
