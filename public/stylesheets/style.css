@@ -113,6 +113,9 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+body .sec {
+  padding: 80px 0; }
+
 body .button-primary {
   background-color: #15A689;
   text-transform: uppercase;
@@ -124,6 +127,8 @@ body .button-primary {
   body .button-primary:hover, body .button-primary:focus {
     color: white;
     background-color: #128f76; }
+  body .button-primary.margin {
+    margin-top: 80px; }
 
 body .button-secondary {
   background-color: #1991AC;
@@ -157,10 +162,10 @@ body .highlight {
     body .highlight--style2:before {
       content: "";
       display: block;
+      bottom: 6px;
       height: 12px;
       width: 100%;
       position: absolute;
-      bottom: 18px;
       z-index: -1;
       background-color: #33EFFF;
       opacity: 0.5; }
@@ -212,15 +217,11 @@ body .scroll {
     margin-bottom: 30px; }
 
 @media only screen and (max-width: 40rem) {
-  body .sec {
-    padding: 80px 0; }
-  body .button-primary {
-    margin-top: 80px; }
   body .button-secondary {
     font-size: 26px; }
   body .highlight--style2:before {
-    height: 6px;
-    bottom: 3px; }
+    bottom: 3px;
+    height: 6px; }
   body .section-title {
     font-size: 30px; }
   body article .article-paragraph {
@@ -234,7 +235,9 @@ body .scroll {
     body .quote:after {
       right: 36px; }
   body .paragraph {
-    font-size: 16px; } }
+    font-size: 16px; }
+  body .flex {
+    flex-direction: column; } }
 
 .owl-carousel {
   position: relative; }
@@ -437,9 +440,6 @@ footer {
       .homepage .sec--hero .card {
         margin-top: 80px;
         left: 0; } }
-  @media only screen and (max-width: 40rem) {
-    .homepage .sec--hero .hero-list {
-      margin: 50px 0 0; } }
 
 .homepage .sec:nth-child(2) {
   padding: 90px 0 60px; }
@@ -467,8 +467,7 @@ footer {
   background-position: center right;
   background-size: contain;
   background-blend-mode: screen;
-  color: white;
-  padding: 90px 0 60px; }
+  color: white; }
   .homepage .sec:nth-child(3) .section-title {
     color: white;
     padding: 35px 0 75px; }
@@ -478,8 +477,7 @@ footer {
   background-position: center;
   background-size: cover;
   padding: 85px 0 190px; }
-  .homepage .sec:nth-child(4) h1 {
-    color: #38208C;
+  .homepage .sec:nth-child(4) .section-title {
     margin-bottom: 60px; }
   .homepage .sec:nth-child(4) .card {
     background: white;
@@ -566,7 +564,7 @@ footer {
 .homepage .sec:nth-child(6) {
   background-color: #E6E6E6; }
   .homepage .sec:nth-child(6) .flex {
-    padding: 45px 0 60px; }
+    padding-top: 45px; }
   .homepage .sec:nth-child(6) article {
     width: calc(50% - 187px);
     margin-left: 127px;
@@ -595,9 +593,6 @@ footer {
     .homepage .sec:nth-child(6) article .article-title {
       font-family: 'montserratextrabold'; }
   @media only screen and (max-width: 40rem) {
-    .homepage .sec:nth-child(6) .flex {
-      flex-direction: column;
-      padding: 45px 0 0; }
     .homepage .sec:nth-child(6) article {
       width: initial; }
       .homepage .sec:nth-child(6) article:nth-child(-n+2) {
@@ -621,7 +616,6 @@ footer {
     margin-left: 30px; }
   @media only screen and (max-width: 40rem) {
     .homepage .sec:nth-child(7) .flex {
-      flex-direction: column;
       align-items: flex-start;
       border-right: 0;
       margin: 0 auto 60px; }
@@ -631,7 +625,7 @@ footer {
       font-size: 17px; } }
 
 .homepage .sec:nth-child(8) .flex {
-  padding: 30px 0 70px; }
+  padding-top: 30px; }
 
 .homepage .sec:nth-child(8) img {
   width: 33%;
@@ -640,9 +634,6 @@ footer {
     padding-right: 0; }
 
 @media only screen and (max-width: 40rem) {
-  .homepage .sec:nth-child(8) .flex {
-    flex-direction: column;
-    padding: 25px 0 0; }
   .homepage .sec:nth-child(8) img {
     width: 100%;
     padding: 5px 0 !important; } }
@@ -674,8 +665,6 @@ footer {
     line-height: 1;
     color: #38208C; }
   @media only screen and (max-width: 40rem) {
-    .homepage .sec:nth-child(9) .flex {
-      flex-direction: column; }
     .homepage .sec:nth-child(9) figure {
       width: 100%;
       margin-right: 0;
