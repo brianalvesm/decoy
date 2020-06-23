@@ -451,8 +451,6 @@ footer {
     .homepage .sec:nth-child(2) article img {
       width: 92px;
       margin-bottom: 50px; }
-    .homepage .sec:nth-child(2) article .article-title {
-      font-size: 26px; }
   @media only screen and (max-width: 40rem) {
     .homepage .sec:nth-child(2) article {
       width: initial; }
@@ -527,8 +525,6 @@ footer {
     width: initial;
     margin-left: 65px;
     margin-right: 45px; }
-    .homepage .sec:nth-child(5) article .article-title {
-      font-size: 30px; }
     .homepage .sec:nth-child(5) article .article-paragraph {
       position: relative; }
       .homepage .sec:nth-child(5) article .article-paragraph:before {
