@@ -10,7 +10,7 @@
 			margin-bottom: 100px
 		@media only screen and (max-width: 64rem)
 			.hero-title
-				font-size: 80px
+				font-size: 60px
 				padding-top: 110px
 				line-height: 1
 	&:nth-child(3)
@@ -58,6 +58,10 @@
 			background-image: none
 			.content-wrapper:after
 				content: none
+		@media only screen and (max-width: 40rem)
+			padding-bottom: 50px
+			.section-title
+				margin: 50px 0
 	&:nth-child(4)
 		padding: 60px 0
 		.section-title
@@ -161,9 +165,11 @@
 				width: 56px
 				height: 50px
 				margin-left: 30px
-		@media only screen and (max-width: 40rem)
+		@media only screen and (max-width: 64rem)
+			.grid-container
+				background: none
 			.button-secondary
-				margin: 50px 0 0
+				margin: 25px 0
 	&:nth-child(7)
 		background-color: $color-primary
 		color: white
