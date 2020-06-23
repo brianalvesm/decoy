@@ -1,13 +1,11 @@
 .produtos .sec
 	&--hero
-		padding-top: 65px
+		padding: 65px 0 0
 		.hero-title
 			font-family: 'montserratbold'
-			font-size: 154px
+			font-size: 120px
 			color: $color-primary
 			padding-top: 220px
-		.section-title
-			margin-bottom: 100px
 		@media only screen and (max-width: 64rem)
 			.hero-title
 				font-size: 60px
@@ -16,22 +14,22 @@
 	&:nth-child(3)
 		padding-bottom: 150px
 		background:
-			image: url('../images/page-produtos-embalagens-decoy@2x.png')
-			size: 1420px 947px
-			position: bottom center
+			image: url('../images/page-produtos-embalagens-decoy.png')
+			size: contain
+			position: bottom right
 		.section-title
 			text-transform: uppercase
-			margin: 100px 0 200px
 		.content-wrapper
 			position: relative
+			margin-top: 250px
 			&:after
 				content: ""
 				display: block
 				width: 312px
 				height: 120px
 				position: absolute
-				top: -120px
-				right: -156px
+				top: -160px
+				right: -112px
 				background:
 					image: url('../images/seta-estilizada-2@2x.png')
 					size: 312px 120px
@@ -60,8 +58,10 @@
 				content: none
 		@media only screen and (max-width: 40rem)
 			padding-bottom: 50px
-			.section-title
-				margin: 50px 0
+			.content-wrapper
+				margin-top: 50px
+			.card-desc
+				margin: 10px 0 30px
 	&:nth-child(4)
 		padding: 60px 0
 		.section-title
@@ -80,13 +80,11 @@
 			&:before
 				display: block
 				font-family: 'montserratbold'
-				font-size: 140px
+				font-size: 110px
 				color: $color-primary
-				width: 84px
-				height: 156px
 				position: absolute
 				top: 50%
-				left: -104px
+				left: -95px
 				margin-top: -78px
 				text-align: left
 			&:nth-child(1):before
@@ -97,9 +95,15 @@
 				content: "3"
 		img
 			width: 566px
+		@media only screen and (max-width: 40rem)
+			article,
+			img
+				margin-bottom: 40px
 	&:nth-child(5)
 		background-color: #E6E6E6
 		padding: 85px 0
+		.section-title.og-color
+			color: initial
 		.highlight--style1
 			color: #4D4D4D
 		.flex
@@ -152,24 +156,30 @@
 				&:nth-child(odd)
 					margin-right: initial
 	&:nth-child(6)
-		.grid-container
-			background:
-				image: url('../images/page-produtos-embalagens-decoy-2@2x.png')
-				size: 830px 554px
-				position: bottom left
-			padding: 85px 0
+		background:
+			image: url('../images/embalagens-decoy@2x.png')
+			size: contain
+			position: bottom left 100px
+		padding: 80px 0
+		.flex
+			margin-top: 80px
+			flex-wrap: wrap
 		.button-secondary
-			margin-top: 150px
-			margin-right: 50px
 			img
 				width: 56px
 				height: 50px
 				margin-left: 30px
+			&:first-child
+				margin-right: 25px
 		@media only screen and (max-width: 64rem)
-			.grid-container
-				background: none
+			background: none
+			.flex
+				margin-top: 0
 			.button-secondary
-				margin: 25px 0
+				margin: 25px 0 0
+		@media only screen and (max-width: 40rem)
+			.button-secondary:first-child
+				margin-right: initial
 	&:nth-child(7)
 		background-color: $color-primary
 		color: white

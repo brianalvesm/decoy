@@ -26,7 +26,7 @@ $(document).ready(function(){
 				// breakpoint from 640 up
 				640 : {
 			    center:false,
-			    margin:0,
+			    margin:10,
 				  nav:true,
 					loop:true,
 				  items:4,
