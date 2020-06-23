@@ -5,7 +5,7 @@ body
 		text-transform: uppercase
 		color: white
 		font-family: 'montserratbold'
-		font-size: 26px
+		font-size: 20px
 		padding: 8px 20px 5px
 		display: inline-block
 		&:hover,
@@ -15,7 +15,7 @@ body
 	.button-secondary
 		background-color: #1991AC
 		color: white
-		font-size: 36px
+		font-size: 26px
 		text-transform: uppercase
 		line-height: 1
 		padding: 14px 30px 12px
@@ -31,7 +31,7 @@ body
 		display: inline-block
 		background-color: $color-primary
 		color: white
-		padding: 40px
+		padding: 30px
 	.highlight
 		font-family: 'montserratbold'
 		&--style1
@@ -43,7 +43,7 @@ body
 			&:before
 				content: ""
 				display: block
-				height: 13px
+				height: 12px
 				width: 100%
 				position: absolute
 				bottom: 18px
@@ -52,7 +52,7 @@ body
 				opacity: 0.5
 	.section-title
 		color: $color-primary
-		font-size: 59px
+		font-size: 40px
 		line-height: 1.2
 
 	article
@@ -61,10 +61,10 @@ body
 			color: $color-primary
 			text-transform: uppercase
 		.article-paragraph
-			font-size: 22px
+			font-size: 20px
 
 	.paragraph
-		font-size: 22px
+		font-size: 20px
 
 	.quote
 		color: $color-primary
@@ -98,8 +98,15 @@ body
 			margin-bottom: 30px
 
 	@media only screen and (max-width: 40rem)
+		.sec
+			padding: 80px 0
+		.button-primary
+			margin-top: 80px
 		.button-secondary
 			font-size: 26px
+		.highlight--style2:before
+			height: 6px
+			bottom: 3px
 		.section-title
 			font-size: 30px
 		article
