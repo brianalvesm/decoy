@@ -1,7 +1,7 @@
 .homepage .sec
 	&--hero
 		background:
-			image: url('../images/hero-section-bg@2x.png')
+			image: url('../images/hero-section-bg.png')
 			position: top center
 			size: cover
 		padding: 65px 0 80px
@@ -34,7 +34,6 @@
 				margin-top: 80px
 				left: 0
 	&:nth-child(2)
-		padding: 90px 0 60px
 		article
 			width: 355px
 			margin: auto
@@ -61,7 +60,7 @@
 			padding-top: 35px
 	&:nth-child(4)
 		background:
-			image: url('../images/section-4-bg-complete@2x.png')
+			image: url('../images/section-4-bg-complete.png')
 			position: center
 			size: cover
 		padding: 85px 0 190px
@@ -91,13 +90,15 @@
 					left: -64px
 		@media only screen and (max-width: 40rem)
 			background-position: right
+			padding: 60px 0
+			.section-title
+				text-align: left
 			.card
 				width: 90%
 				padding: 45px 35px
 				ul li:before
 					left: -54px
 	&:nth-child(5)
-		padding: 60px 0 90px
 		.grid-x:first-child
 			margin-bottom: 100px
 		.flex
