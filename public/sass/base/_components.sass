@@ -1,21 +1,25 @@
 // Components
 body
+	.sec
+		padding: 60px 0
 	.button-primary
 		background-color: #15A689
 		text-transform: uppercase
 		color: white
 		font-family: 'montserratbold'
-		font-size: 26px
+		font-size: 20px
 		padding: 8px 20px 5px
 		display: inline-block
 		&:hover,
 		&:focus
 			color: white
 			background-color: darken(#15A689, 5%)
+		&.margin
+			margin-top: 80px
 	.button-secondary
 		background-color: #1991AC
 		color: white
-		font-size: 36px
+		font-size: 20px
 		text-transform: uppercase
 		line-height: 1
 		padding: 14px 30px 12px
@@ -31,7 +35,7 @@ body
 		display: inline-block
 		background-color: $color-primary
 		color: white
-		padding: 40px
+		padding: 30px
 	.highlight
 		font-family: 'montserratbold'
 		&--style1
@@ -43,32 +47,30 @@ body
 			&:before
 				content: ""
 				display: block
-				height: 13px
+				bottom: 6px
+				height: 12px
 				width: 100%
 				position: absolute
-				bottom: 18px
 				z-index: -1
 				background-color: $color-secondary
 				opacity: 0.5
 	.section-title
 		color: $color-primary
-		font-size: 59px
+		font-size: 40px
 		line-height: 1.2
-
+		margin-bottom: 60px
 	article
 		.article-title
 			font-family: 'montserratbold'
 			color: $color-primary
 			text-transform: uppercase
 		.article-paragraph
-			font-size: 22px
-
+			font-size: 19px
 	.paragraph
-		font-size: 22px
-
+		font-size: 19px
 	.quote
 		color: $color-primary
-		font-size: 30px
+		font-size: 24px
 		position: relative
 		padding-left: 92px
 		&:before,
@@ -87,7 +89,6 @@ body
 			background-image: url('../images/icons/icon-quote-close@2x.png')
 			bottom: -28px
 			right: 0
-
 	.scroll
 		overflow-y: scroll
 		width: 100%
@@ -96,12 +97,20 @@ body
 		.item
 			width: calc(100% - 30px)
 			margin-bottom: 30px
-
+	.owl-carousel
+		width: 90%
+		margin: auto
 	@media only screen and (max-width: 40rem)
+		.sec
+			padding: 40px 0
 		.button-secondary
 			font-size: 26px
+		.highlight--style2:before
+			bottom: 3px
+			height: 6px
 		.section-title
 			font-size: 30px
+			margin-bottom: 30px
 		article
 			.article-paragraph
 				font-size: 14px
@@ -119,6 +128,15 @@ body
 		.paragraph
 			font-size: 16px
 
+		.flex
+			flex-direction: column
+
+		.scroll
+			height: initial
+			margin-bottom: 0
+			.item:last-child
+				margin-bottom: 0
+
 .owl-carousel
 	position: relative
 	&.owl-theme .owl-nav [class*=owl-]:hover
@@ -134,11 +152,11 @@ body
 			height: 90px
 			background-size: contain
 	.owl-prev
-		left: -50px
+		left: -60px
 		span
 			background-image: url('../images/icons/icon-nav-left@2x.png')
 	.owl-next
-		right: -50px
+		right: -60px
 		span
 			background-image: url('../images/icons/icon-nav-right@2x.png')
 	.owl-item

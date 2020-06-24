@@ -4,46 +4,43 @@
 			image: url('../images/hero-section-bg@2x.png')
 			position: top center
 			size: cover
-		padding: 65px 0 108px
+		padding: 65px 0 80px
 		.hero-title
 			font-family: 'montserratextralight'
-			font-size: 99px
+			font-size: 60px
 			line-height: 0.8
 			b
 				font-family: 'montserratbold'
 		.hero-subtitle
 			font-family: 'montserratmedium'
-			font-size: 30px
+			font-size: 26px
 			line-height: 1.3
 		.card
-			margin-top: 220px
+			margin-top: 150px
 			position: relative
 			left: -40px
 		.hero-list
-			margin: 50px 0 35px
+			margin: 50px 0
 			font-family: 'montserratbold'
-			font-size: 33px
+			font-size: 26px
 			color: $color-primary
-		@media only screen and (max-width: 75rem)
+		@media only screen and (max-width: 64rem)
 			background-position: top left
 			.hero-title
-				font-size: 50px
+				font-size: 40px
 			.hero-subtitle
-				font-size: 20px
+				font-size: 16px
 			.card
-				margin-top: 110px
+				margin-top: 80px
+				left: 0
 	&:nth-child(2)
 		padding: 90px 0 60px
-		.section-title
-			margin-bottom: 40px
 		article
 			width: 355px
 			margin: auto
 			img
 				width: 92px
 				margin-bottom: 50px
-			.article-title
-				font-size: 30px
 		@media only screen and (max-width: 40rem)
 			article
 				width: initial
@@ -59,25 +56,15 @@
 			size: contain 
 		background-blend-mode: screen
 		color: white
-		padding: 90px 0 60px
 		.section-title
 			color: white
-			padding: 35px 0 75px
-		h2
-			font-size: 39px
-			margin-bottom: 45px
-		@media only screen and (max-width: 40rem)
-			h2
-				font-size: 29px
+			padding-top: 35px
 	&:nth-child(4)
 		background:
 			image: url('../images/section-4-bg-complete@2x.png')
 			position: center
 			size: cover
 		padding: 85px 0 190px
-		h1
-			color: $color-primary
-			margin-bottom: 60px
 		.card
 			background: white
 			width: 492px
@@ -103,6 +90,7 @@
 					position: absolute
 					left: -64px
 		@media only screen and (max-width: 40rem)
+			background-position: right
 			.card
 				width: 90%
 				padding: 45px 35px
@@ -120,13 +108,10 @@
 			line-height: 1
 		img
 			width: 442px
-			margin-bottom: 50px
 		article
 			width: initial
 			margin-left: 65px
 			margin-right: 45px
-			.article-title
-				font-size: 30px
 			.article-paragraph
 				position: relative
 				&:before
@@ -161,9 +146,8 @@
 					margin-bottom: 0
 	&:nth-child(6)
 		background-color: #E6E6E6
-		padding: 85px 0
 		.flex
-			padding: 45px 0 60px
+			padding-top: 45px
 		article
 			width: calc(50% - 187px)
 			margin-left: 127px
@@ -192,8 +176,6 @@
 			.article-title
 				font-family: 'montserratextrabold'
 		@media only screen and (max-width: 40rem)
-			.flex
-				flex-direction: column
 			article
 				width: initial
 				&:nth-child(-n+2)
@@ -203,8 +185,7 @@
 	&:nth-child(7)
 		background-color: $color-primary
 		color: white
-		padding: 80px 0
-		.flex
+		.logo-highlight
 			height: 146px
 			border-right: 2px solid white
 			margin: 20px 60px 20px 0
@@ -217,7 +198,6 @@
 			margin-left: 30px
 		@media only screen and (max-width: 40rem)
 			.flex
-				flex-direction: column
 				align-items: flex-start
 				border-right: 0
 				margin: 0 auto 60px
@@ -226,18 +206,14 @@
 			h3
 				font-size: 17px
 	&:nth-child(8)
-		padding: 80px 0
 		.flex
-			padding: 30px 0 70px
+			padding-top: 30px
 		img
 			width: 33%
 			padding-right: 30px
 			&:last-child
 				padding-right: 0
 		@media only screen and (max-width: 40rem)
-			.flex
-				flex-direction: column
-				padding: 25px 0 65px
 			img
 				width: 100%
 				padding: 5px 0 !important
@@ -268,18 +244,12 @@
 			line-height: 1
 			color: $color-primary
 		@media only screen and (max-width: 40rem)
-			.flex
-				flex-direction: column
 			figure
 				width: 100%
 				margin-right: 0
 				margin-bottom: 10px 
 	&:nth-child(10)
-		padding: 80px 0
-		.section-title,
-		article:last-child
-			margin-bottom: 90px
-		@media only screen and (min-width: 97.500rem)
+		@media only screen and (min-width: 75rem)
 			background:
 				image: url('../images/section-10-asset@2x.png')
 				position: right 100px center

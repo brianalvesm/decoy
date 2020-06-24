@@ -26,7 +26,16 @@ $(document).ready(function(){
 				// breakpoint from 640 up
 				640 : {
 			    center:false,
-			    margin:0,
+			    margin:10,
+				  nav:true,
+					loop:true,
+				  items:3,
+				  dots:false,
+				  autoplay:true
+				},
+				1024 : {
+					center:false,
+			    margin:10,
 				  nav:true,
 					loop:true,
 				  items:4,

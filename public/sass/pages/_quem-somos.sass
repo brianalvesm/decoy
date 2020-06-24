@@ -4,10 +4,10 @@
 			image: url('../images/page-quem-somos-hero-bg@2x.png')
 			position: top center
 			size: cover
-		padding-top: 65px
+		padding: 65px 0 0
 		.hero-title
 			font-family: 'montserratbold'
-			font-size: 154px
+			font-size: 120px
 			color: $color-primary
 			padding-top: 220px
 		@media only screen and (max-width: 64rem)
@@ -16,15 +16,15 @@
 				padding-top: 110px
 				line-height: 1
 	&:nth-child(2)
-		.section-title
-			padding: 125px 0
 		.grid-x
 			margin-bottom: 50px
+			&:nth-child(n+5)
+				margin-bottom: 0
 		.img-wrapper
 			&--1
 				margin-right: 40px
 			&--2
-				margin: 50px 0
+				margin: 0 0 50px
 			&--3
 				position: relative
 				&:after
@@ -41,7 +41,7 @@
 		.paragraph-wrapper
 			margin: 100px 0 0 40px
 		.quote
-			margin: 90px 0
+			margin: 90px 0 30px
 		@media only screen and (max-width: 64rem)
 			.img-wrapper
 				margin: 0 0 50px
@@ -59,36 +59,35 @@
 	&:nth-child(3)
 		background-color: #E6E6E6
 		background-image: linear-gradient(#E6E6E6 80%, #FFFFFF 20%)
-		.section-title
-			padding: 80px 0 60px
-		.team-lab-desc
+		.lab-desc,
+		.team-desc
 			font-family: 'montserratlight'
 			font-size: 23px
 			color: $color-primary
 			display: block
 			text-align: center
+		.team-desc
 			margin: 60px auto
-	&:nth-child(4)
-		.section-title
-			margin-bottom: 60px
-		.button-primary
-			margin: 70px auto
+		.lab-desc
+			margin: 60px auto 0
 	&:nth-child(5)
 		background:
-			image: url('../images/page-quemsomos-manifesto-bg@2x.png')
+			image: url('../images/page-quemsomos-manifesto-bg-crop-optimized.png')
 			size: cover
 			position: center top 250px
 		.section-title
-			margin-bottom: 60px
 			color: white
 			text-align: center
 		.card
 			margin-bottom: 185px
 			.button-primary
 				margin: 60px 0
+		@media only screen and (max-width: 40rem)
+			.card
+				margin-bottom: 0
 
 .owl-quemsomos .card
-	width: 345px
+	width: 100% // 345px
 	height: 340px
 	@media only screen and (max-width: 40rem)
 		width: 100%
