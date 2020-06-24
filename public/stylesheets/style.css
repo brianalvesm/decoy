@@ -217,6 +217,10 @@ body .scroll {
     width: calc(100% - 30px);
     margin-bottom: 30px; }
 
+body .owl-carousel {
+  width: 90%;
+  margin: auto; }
+
 @media only screen and (max-width: 40rem) {
   body .sec {
     padding: 40px 0; }
