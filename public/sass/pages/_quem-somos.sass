@@ -16,10 +16,10 @@
 				padding-top: 110px
 				line-height: 1
 	&:nth-child(2)
-		.section-title
-			padding: 0 0 80px
 		.grid-x
 			margin-bottom: 50px
+			&:nth-child(n+5)
+				margin-bottom: 0
 		.img-wrapper
 			&--1
 				margin-right: 40px
@@ -59,25 +59,23 @@
 	&:nth-child(3)
 		background-color: #E6E6E6
 		background-image: linear-gradient(#E6E6E6 80%, #FFFFFF 20%)
-		.section-title
-			padding: 80px 0 60px
-		.team-lab-desc
+		.lab-desc,
+		.team-desc
 			font-family: 'montserratlight'
 			font-size: 23px
 			color: $color-primary
 			display: block
 			text-align: center
+		.team-desc
 			margin: 60px auto
-	&:nth-child(4)
-		.section-title
-			margin-bottom: 60px
+		.lab-desc
+			margin: 60px auto 0
 	&:nth-child(5)
 		background:
 			image: url('../images/page-quemsomos-manifesto-bg-crop-optimized.png')
 			size: cover
 			position: center top 250px
 		.section-title
-			margin-bottom: 60px
 			color: white
 			text-align: center
 		.card

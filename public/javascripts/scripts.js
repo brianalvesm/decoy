@@ -29,6 +29,15 @@ $(document).ready(function(){
 			    margin:10,
 				  nav:true,
 					loop:true,
+				  items:3,
+				  dots:false,
+				  autoplay:true
+				},
+				1024 : {
+					center:false,
+			    margin:10,
+				  nav:true,
+					loop:true,
 				  items:4,
 				  dots:false,
 				  autoplay:true

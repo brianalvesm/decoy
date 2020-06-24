@@ -173,7 +173,8 @@ body .highlight {
 body .section-title {
   color: #38208C;
   font-size: 40px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-bottom: 60px; }
 
 body article .article-title {
   font-family: 'montserratbold';
@@ -217,13 +218,16 @@ body .scroll {
     margin-bottom: 30px; }
 
 @media only screen and (max-width: 40rem) {
+  body .sec {
+    padding: 40px 0; }
   body .button-secondary {
     font-size: 26px; }
   body .highlight--style2:before {
     bottom: 3px;
     height: 6px; }
   body .section-title {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-bottom: 30px; }
   body article .article-paragraph {
     font-size: 14px; }
   body .quote {
@@ -237,7 +241,12 @@ body .scroll {
   body .paragraph {
     font-size: 16px; }
   body .flex {
-    flex-direction: column; } }
+    flex-direction: column; }
+  body .scroll {
+    height: initial;
+    margin-bottom: 0; }
+    body .scroll .item:last-child {
+      margin-bottom: 0; } }
 
 .owl-carousel {
   position: relative; }
@@ -366,15 +375,20 @@ footer {
     padding: 80px 0; }
   @media only screen and (max-width: 40rem) {
     footer {
+      text-align: center;
       padding-top: 80px; }
       footer ul li {
         display: block; }
+        footer ul li a {
+          margin-right: 0; }
       footer .logo-decoy-negativo {
         margin-bottom: 50px; }
       footer .footer-socialmedia-icons {
         margin-top: 50px; }
       footer .footer-highlight {
         font-size: 15px; }
+      footer .flex {
+        align-items: center; }
       footer address {
         font-size: 14px; }
       footer .footer-copyright {
@@ -444,8 +458,6 @@ footer {
 
 .homepage .sec:nth-child(2) {
   padding: 90px 0 60px; }
-  .homepage .sec:nth-child(2) .section-title {
-    margin-bottom: 40px; }
   .homepage .sec:nth-child(2) article {
     width: 355px;
     margin: auto; }
@@ -469,15 +481,13 @@ footer {
   color: white; }
   .homepage .sec:nth-child(3) .section-title {
     color: white;
-    padding: 35px 0 75px; }
+    padding-top: 35px; }
 
 .homepage .sec:nth-child(4) {
   background-image: url("../images/section-4-bg-complete@2x.png");
   background-position: center;
   background-size: cover;
   padding: 85px 0 190px; }
-  .homepage .sec:nth-child(4) .section-title {
-    margin-bottom: 60px; }
   .homepage .sec:nth-child(4) .card {
     background: white;
     width: 492px;
@@ -667,10 +677,7 @@ footer {
       margin-right: 0;
       margin-bottom: 10px; } }
 
-.homepage .sec:nth-child(10) .section-title {
-  margin-bottom: 90px; }
-
-@media only screen and (min-width: 97.5rem) {
+@media only screen and (min-width: 75rem) {
   .homepage .sec:nth-child(10) {
     background-image: url("../images/section-10-asset@2x.png");
     background-position: right 100px center;
@@ -774,6 +781,8 @@ footer {
   .produtos .sec:nth-child(4) img {
     width: 566px; }
   @media only screen and (max-width: 40rem) {
+    .produtos .sec:nth-child(4) .section-title {
+      margin-bottom: 30px; }
     .produtos .sec:nth-child(4) article,
     .produtos .sec:nth-child(4) img {
       margin-bottom: 40px; } }
@@ -869,12 +878,13 @@ footer {
     margin: 20px 60px 20px 0;
     justify-content: space-evenly; }
   .produtos .sec:nth-child(7) .logo-decoy-negativo {
-    width: 120px;
-    height: 140px; }
+    width: 120px; }
   @media only screen and (max-width: 40rem) {
     .produtos .sec:nth-child(7) .flex {
       flex-direction: column;
       margin: 60px 0; }
+    .produtos .sec:nth-child(7) .logo-decoy-negativo {
+      width: 60px; }
     .produtos .sec:nth-child(7) .button-primary {
       margin: 50px auto; }
     .produtos .sec:nth-child(7) h3 {
@@ -896,11 +906,10 @@ footer {
       padding-top: 110px;
       line-height: 1; } }
 
-.quem-somos .sec:nth-child(2) .section-title {
-  padding: 0 0 80px; }
-
 .quem-somos .sec:nth-child(2) .grid-x {
   margin-bottom: 50px; }
+  .quem-somos .sec:nth-child(2) .grid-x:nth-child(n+5) {
+    margin-bottom: 0; }
 
 .quem-somos .sec:nth-child(2) .img-wrapper--1 {
   margin-right: 40px; }
@@ -946,25 +955,23 @@ footer {
 .quem-somos .sec:nth-child(3) {
   background-color: #E6E6E6;
   background-image: linear-gradient(#E6E6E6 80%, #FFFFFF 20%); }
-  .quem-somos .sec:nth-child(3) .section-title {
-    padding: 80px 0 60px; }
-  .quem-somos .sec:nth-child(3) .team-lab-desc {
+  .quem-somos .sec:nth-child(3) .lab-desc,
+  .quem-somos .sec:nth-child(3) .team-desc {
     font-family: 'montserratlight';
     font-size: 23px;
     color: #38208C;
     display: block;
-    text-align: center;
+    text-align: center; }
+  .quem-somos .sec:nth-child(3) .team-desc {
     margin: 60px auto; }
-
-.quem-somos .sec:nth-child(4) .section-title {
-  margin-bottom: 60px; }
+  .quem-somos .sec:nth-child(3) .lab-desc {
+    margin: 60px auto 0; }
 
 .quem-somos .sec:nth-child(5) {
   background-image: url("../images/page-quemsomos-manifesto-bg-crop-optimized.png");
   background-size: cover;
   background-position: center top 250px; }
   .quem-somos .sec:nth-child(5) .section-title {
-    margin-bottom: 60px;
     color: white;
     text-align: center; }
   .quem-somos .sec:nth-child(5) .card {

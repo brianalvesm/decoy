@@ -58,6 +58,7 @@ body
 		color: $color-primary
 		font-size: 40px
 		line-height: 1.2
+		margin-bottom: 60px
 
 	article
 		.article-title
@@ -102,6 +103,8 @@ body
 			margin-bottom: 30px
 
 	@media only screen and (max-width: 40rem)
+		.sec
+			padding: 40px 0
 		.button-secondary
 			font-size: 26px
 		.highlight--style2:before
@@ -109,6 +112,7 @@ body
 			height: 6px
 		.section-title
 			font-size: 30px
+			margin-bottom: 30px
 		article
 			.article-paragraph
 				font-size: 14px
@@ -128,6 +132,12 @@ body
 
 		.flex
 			flex-direction: column
+
+		.scroll
+			height: initial
+			margin-bottom: 0
+			.item:last-child
+				margin-bottom: 0
 
 .owl-carousel
 	position: relative
