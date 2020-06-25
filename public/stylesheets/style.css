@@ -489,13 +489,17 @@ footer {
     padding-top: 35px; }
 
 .homepage .sec:nth-child(4) {
-  background-image: url("../images/section-4-bg-complete.png");
+  background-image: url("../images/section-4-bg.jpg");
   background-position: center;
-  background-size: cover;
-  padding: 85px 0 190px; }
+  background-size: cover; }
+  .homepage .sec:nth-child(4) .grid-container {
+    background-image: url("../images/embalagens-decoy@2x.png");
+    background-position: center bottom -25px;
+    background-size: contain; }
+  .homepage .sec:nth-child(4) .grid-x:last-child {
+    padding: 50px 0 150px; }
   .homepage .sec:nth-child(4) .card {
     background: white;
-    width: 492px;
     padding: 55px 45px;
     color: #4D4D4D;
     overflow: visible; }
@@ -503,7 +507,7 @@ footer {
       font-family: 'montserratbold';
       font-family: 22px;
       text-transform: uppercase;
-      margin-bottom: 57px;
+      margin-bottom: 50px;
       position: relative; }
       .homepage .sec:nth-child(4) .card ul li:last-child {
         margin-bottom: 0; }
@@ -516,17 +520,25 @@ footer {
         background-size: contain;
         position: absolute;
         left: -64px; }
+  @media only screen and (max-width: 64rem) {
+    .homepage .sec:nth-child(4) .grid-container {
+      background: none; }
+    .homepage .sec:nth-child(4) .grid-x:last-child {
+      padding: 0; }
+    .homepage .sec:nth-child(4) .card {
+      width: 90%;
+      margin: 0 auto;
+      padding: 45px 35px; }
+      .homepage .sec:nth-child(4) .card ul li {
+        margin-bottom: 30px; }
+        .homepage .sec:nth-child(4) .card ul li:before {
+          left: -54px; } }
   @media only screen and (max-width: 40rem) {
     .homepage .sec:nth-child(4) {
       background-position: right;
       padding: 60px 0; }
       .homepage .sec:nth-child(4) .section-title {
-        text-align: left; }
-      .homepage .sec:nth-child(4) .card {
-        width: 90%;
-        padding: 45px 35px; }
-        .homepage .sec:nth-child(4) .card ul li:before {
-          left: -54px; } }
+        text-align: left; } }
 
 .homepage .sec:nth-child(5) .grid-x:first-child {
   margin-bottom: 100px; }

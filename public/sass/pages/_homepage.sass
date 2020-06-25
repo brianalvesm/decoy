@@ -60,13 +60,18 @@
 			padding-top: 35px
 	&:nth-child(4)
 		background:
-			image: url('../images/section-4-bg-complete.png')
+			image: url('../images/section-4-bg.jpg')
 			position: center
 			size: cover
-		padding: 85px 0 190px
+		.grid-container
+			background:
+				image: url('../images/embalagens-decoy@2x.png')
+				position: center bottom -25px
+				size: contain
+		.grid-x:last-child
+			padding: 50px 0 150px
 		.card
 			background: white
-			width: 492px
 			padding: 55px 45px
 			color: #4D4D4D
 			overflow: visible
@@ -74,7 +79,7 @@
 				font-family: 'montserratbold'
 				font-family: 22px
 				text-transform: uppercase
-				margin-bottom: 57px
+				margin-bottom: 50px
 				position: relative
 				&:last-child
 					margin-bottom: 0
@@ -88,16 +93,24 @@
 						size: contain
 					position: absolute
 					left: -64px
+		@media only screen and (max-width: 64rem)
+			.grid-container
+				background: none
+			.grid-x:last-child
+				padding: 0
+			.card
+				width: 90%
+				margin: 0 auto
+				padding: 45px 35px
+				ul li
+					margin-bottom: 30px
+					&:before
+						left: -54px
 		@media only screen and (max-width: 40rem)
 			background-position: right
 			padding: 60px 0
 			.section-title
 				text-align: left
-			.card
-				width: 90%
-				padding: 45px 35px
-				ul li:before
-					left: -54px
 	&:nth-child(5)
 		.grid-x:first-child
 			margin-bottom: 100px
