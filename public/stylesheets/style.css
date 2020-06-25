@@ -805,7 +805,8 @@ footer {
   background-color: #E6E6E6;
   padding: 85px 0; }
   .produtos .sec:nth-child(5) .section-title.og-color {
-    color: initial; }
+    color: initial;
+    margin-bottom: 0; }
   .produtos .sec:nth-child(5) .highlight--style1 {
     color: #4D4D4D; }
   .produtos .sec:nth-child(5) .flex {
