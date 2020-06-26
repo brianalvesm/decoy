@@ -10,6 +10,14 @@
     .text-right-to-center-small {
       text-align: center; } }
 
+@media only screen and (min-width: 90rem) {
+  .visible-below-1440 {
+    display: none !important; } }
+
+@media only screen and (max-width: 90rem) {
+  .visible-below-1440 {
+    display: block; } }
+
 @media only screen and (min-width: 64rem) {
   .visible-mobile-only {
     display: none !important; } }
@@ -136,7 +144,7 @@ body .button-secondary {
   font-size: 20px;
   text-transform: uppercase;
   line-height: 1;
-  padding: 14px 30px 12px;
+  padding: 14px 20px 12px;
   display: inline-flex;
   align-items: center; }
   body .button-secondary b {
@@ -886,14 +894,18 @@ footer {
     height: 50px;
     margin-left: 30px; }
   .produtos .sec:nth-child(6) .button-secondary:first-child {
-    margin-right: 25px; }
-  @media only screen and (max-width: 64rem) {
+    margin-right: 15px; }
+  .produtos .sec:nth-child(6) .content-wrapper {
+    margin-left: 40%; }
+  @media only screen and (max-width: 90rem) {
     .produtos .sec:nth-child(6) {
       background: none; }
       .produtos .sec:nth-child(6) .flex {
         margin-top: 0; }
       .produtos .sec:nth-child(6) .button-secondary {
-        margin: 25px 0 0; } }
+        margin: 25px 0 0; }
+      .produtos .sec:nth-child(6) .content-wrapper {
+        margin-left: 0; } }
   @media only screen and (max-width: 40rem) {
     .produtos .sec:nth-child(6) .button-secondary:first-child {
       margin-right: initial; } }
