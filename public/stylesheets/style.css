@@ -269,7 +269,7 @@ body .owl-carousel {
   .owl-carousel .owl-prev,
   .owl-carousel .owl-next {
     position: absolute;
-    top: 125px; }
+    top: 25%; }
     .owl-carousel .owl-prev span,
     .owl-carousel .owl-next span {
       display: block;
