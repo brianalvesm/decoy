@@ -51,3 +51,31 @@ header
 			flex-wrap: wrap
 			flex-direction: initial
 			justify-content: space-evenly
+
+.dropdown-item
+	position: relative
+	.dropdown
+		+transition(200ms)
+		position: absolute
+		display: none
+		visibility: hidden
+		opacity: 0
+		a
+			margin: auto
+			font-size: 70%
+			border-bottom: none
+	a
+		border-bottom: none
+	&:hover .dropdown
+		+transition(200ms)
+		display: block
+		visibility: visible
+		opacity: 1
+	@media only screen and (max-width: 40rem)
+		.dropdown
+			position: relative
+			display: block
+			visibility: visible
+			opacity: 1
+			max-height: initial
+			margin-left: 20px
