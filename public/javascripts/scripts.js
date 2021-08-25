@@ -11,6 +11,8 @@ $(document).ready(function(){
 		  return false;
 		});
 
+		$('.dropdown').fadeIn()();
+
 		$('.owl-quemsomos').owlCarousel({
 			responsive : {
 				// breakpoint from 0 up
